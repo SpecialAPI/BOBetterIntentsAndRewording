@@ -160,6 +160,13 @@ namespace BOBetterIntentsAndRewording
                 TargetIntent(Targeting.Unit_OtherAllies, IntentType_GameIDs.Damage_Death.ToString()),
                 TargetIntent(Targeting.Slot_SelfSlot, IntentForHealing(200), IntentType_GameIDs.Other_Spawn.ToString(), IntentType_GameIDs.Other_Spawn.ToString(), IntentType_GameIDs.Other_Spawn.ToString(), IntentType_GameIDs.Other_Spawn.ToString(), IntentType_GameIDs.Other_MaxHealth_Alt.ToString()),
             };
+
+            var persistence = LoadedAssetsHandler.GetEnemyAbility("PersistenceOfTime_A");
+            persistence.intents = new()
+            {
+                TargetIntent(Targeting.Unit_AllAllies, IntentForDamage(1)),
+                TargetIntent(Targeting.Unit_AllOpponents, IntentForDamage(1)),
+            };
         }
     }
 }
