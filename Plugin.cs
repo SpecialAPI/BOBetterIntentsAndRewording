@@ -30,6 +30,7 @@ namespace BOBetterIntentsAndRewording
             ScatteringHomunculusChanges.Init();
             SepulchreChanges.Init();
             FoundlingChanges.Init();
+            SynodChanges.Init();
 
             BronzoChanges.Init();
         }
