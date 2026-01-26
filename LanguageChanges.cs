@@ -10,6 +10,8 @@ namespace BOBetterIntentsAndRewording
     {
         public static readonly Dictionary<string, LanguageChangeData> languageChanges = [];
 
+        public static LanguageChangeData English => languageChanges.GetOrAdd("en_US");
+
         [HarmonyPatch(typeof(InGameLanguage), nameof(InGameLanguage.InitializeLocalisation))]
         [HarmonyPostfix]
         public static void ApplyLanguageChanges_Postfix(InGameLanguage __instance, LocalisationData data)
