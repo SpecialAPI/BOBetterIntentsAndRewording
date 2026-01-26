@@ -32,6 +32,7 @@ namespace BOBetterIntentsAndRewording
             FoundlingChanges.Init();
             SynodChanges.Init();
 
+            HeavenChanges.Init();
             BronzoChanges.Init();
         }
     }
