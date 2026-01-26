@@ -29,6 +29,7 @@ namespace BOBetterIntentsAndRewording
             GigglingMinisterChanges.Init();
             ScatteringHomunculusChanges.Init();
             SepulchreChanges.Init();
+            FoundlingChanges.Init();
 
             BronzoChanges.Init();
         }
