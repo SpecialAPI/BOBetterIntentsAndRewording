@@ -18,6 +18,8 @@ namespace BOBetterIntentsAndRewording
             var harmony = new Harmony(MOD_GUID);
             harmony.PatchAll();
 
+            LeviatChanges.Init();
+
             KekoChanges.Init();
             KekastleChanges.Init();
             TaMaGoaChanges.Init();
