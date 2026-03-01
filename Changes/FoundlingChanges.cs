@@ -1,5 +1,7 @@
-﻿using System;
+﻿using BOBetterIntentsAndRewording.Tools;
+using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace BOBetterIntentsAndRewording.Changes
@@ -26,6 +28,10 @@ namespace BOBetterIntentsAndRewording.Changes
             {
                 TargetIntent(Targeting.Spec_Unit_AllOpponents_Strongest, PassiveIntents.PA_Fleeting)
             };
+
+            var bubonicRhapsody = LoadedAssetsHandler.GetEnemyAbility("BubonicRhapsody_A");
+            var bubonicRhapsodyCascade = bubonicRhapsody.effects.FirstOrDefault(x => x.effect is DamageOnDoubleCascadeEffect);
+            bubonicRhapsody.intents = bubonicRhapsodyCascade.GenerateIntentsForDamageCascade();
         }
     }
 }
