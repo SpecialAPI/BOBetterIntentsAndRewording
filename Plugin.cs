@@ -1,6 +1,5 @@
 ﻿using BepInEx;
 using BrutalAPI;
-using Grimoire.Content.Intent;
 using HarmonyLib;
 using System;
 
