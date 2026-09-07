@@ -8,7 +8,7 @@ namespace BOBetterIntentsAndRewording
     [BepInPlugin(MOD_GUID, MOD_NAME, MOD_VERSION)]
     public class Plugin : BaseUnityPlugin
     {
-        public const string MOD_GUID = "SpecialAPI.BetterIntentsAndRewording";
+        public const string MOD_GUID = "157.BetterIntentsAndRewording";
         public const string MOD_NAME = "Better Intents and Rewording";
         public const string MOD_VERSION = "1.0.0";
 
